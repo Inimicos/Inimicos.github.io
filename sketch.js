@@ -23,8 +23,8 @@ function setup() {
   createCanvas(600,600 );
   frameRate(300);
   
-xSpeed= floor(random(2,7));
-ySpeed= floor(random(0,5));
+xSpeed= floor(random(2,25));
+ySpeed= floor(random(0,30));
 
 radius = 50;
 x=radius/2+1;
