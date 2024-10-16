@@ -136,7 +136,7 @@ if(y<=radius/2 && xMinTime > 2){
    } 
 }
 
-function keyPressed() {
+/* function keyPressed() {
   pressedKeys[key] = true;
 }
 
