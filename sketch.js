@@ -49,7 +49,7 @@ function draw() {
   speed=sqrt(ySpeed*ySpeed+xSpeed*xSpeed);
   
 if(speed!=0){
-  speed=speed-0.05;
+  speed=speed-0.01;
    }
   if(xSpeed<0){
      xSpeed=-1*(sqrt((speed*speed)/anteilX));
@@ -57,7 +57,6 @@ if(speed!=0){
   else {
     xSpeed=sqrt((speed*speed)/anteilX);
        }
-  console.log(xSpeed)
   
   
   
