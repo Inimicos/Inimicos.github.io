@@ -49,7 +49,7 @@ function draw() {
   speed=sqrt(ySpeed*ySpeed+xSpeed*xSpeed);
   
 if(speed!=0){
-  speed=speed-0.1;
+  speed=speed-0.05;
    }
   if(xSpeed<0){
      xSpeed=-1*(sqrt((speed*speed)/anteilX));
@@ -77,11 +77,11 @@ if(speed!=0){
   
   if((ySpeed<-0.6 && ySpeed<0.6 )|| y < height-radius/2-2){
     if(ySpeed>0){
-      ySpeed=ySpeed+0.3; 
+      ySpeed=ySpeed+0.2; 
      }
     
     else{
-      ySpeed=ySpeed+0.3;
+      ySpeed=ySpeed+0.2;
     }
   }
  
