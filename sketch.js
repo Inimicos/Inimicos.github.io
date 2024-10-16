@@ -1,5 +1,5 @@
-let xSpeed= 20;
-let ySpeed= 5;
+let xSpeed= 2;
+let ySpeed= 1;
 
 let radius = 50;
 let x=radius/2+1;
@@ -20,8 +20,21 @@ let yMaxTime=0;
 
 
 function setup() {
-  createCanvas(1500,930 );
+  createCanvas(600,600 );
   frameRate(300);
+  
+xSpeed= 20;
+ySpeed= 1;
+
+radius = 50;
+x=radius/2+1;
+y=radius/2+1;
+
+xMinTime=0;
+xMaxTime=0;
+yMinTime=0;
+yMaxTime=0;
+  
 }
 
 function draw() {
@@ -84,11 +97,11 @@ if(speed!=0){
     }
   }
  
-  if(ySpeed>-0.0001 && ySpeed<0.0001 && y > height-radius/2){
+  if(ySpeed>-0.01 && ySpeed<0.01 && y > height-radius/2-1){
     ySpeed=0;
-      if(xSpeed==0 && ySpeed==0){
-    draw();
-  }
+
+    setup();
+
   }
 
 
