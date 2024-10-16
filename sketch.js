@@ -39,14 +39,14 @@ yMaxTime=0;
 
 function draw() {
 
-
-  if(pressedKeys.r){
-    setup();
-  }
   
   background(220);
   fill(0,0,100);
   circle(x,y,radius);
+
+    if(pressedKeys.r){
+    setup();
+  } 
   
   
   xMinTime = xMinTime + 1;
