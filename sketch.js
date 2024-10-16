@@ -1,4 +1,4 @@
-let xSpeed= 13;
+let xSpeed= 12;
 let ySpeed= 5;
 
 let radius = 50;
