@@ -65,10 +65,10 @@ function draw() {
 if(speed >= 0.01){
   speed=speed*0.998;
    }
-  else{
+  /*else{
     speed=0;
     setup();
-  }
+  } */
   
   if(xSpeed<0){
      xSpeed=-1*(sqrt((speed*speed)/anteilX));
@@ -142,4 +142,4 @@ if(y<=radius/2 && xMinTime > 2){
 
 function keyReleased(){
   delete pressedKeys[key];
-}
+} */
