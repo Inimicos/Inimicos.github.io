@@ -38,7 +38,11 @@ yMaxTime=0;
 }
 
 function draw() {
-  
+
+
+  if(pressedKeys.r){
+    setup();
+  }
   
   background(220);
   fill(0,0,100);
@@ -103,9 +107,6 @@ if(speed >= 0.01){
  
   if(ySpeed>-0.01 && ySpeed<0.01 && y > height-radius/2-1){
     ySpeed=0;
-
-    setup();
-
   }
 
 
@@ -135,4 +136,12 @@ if(y<=radius/2 && xMinTime > 2){
   
     yMinTime=0;
    } 
+}
+
+function keyPressed() {
+  pressedKeys[key] = true;
+}
+
+function keyReleased(){
+  delete pressedKeys[key];
 }
