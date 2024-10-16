@@ -31,6 +31,10 @@ function draw() {
   fill(0,0,100);
   circle(x,y,radius);
   
+  if(xSpeed==0 && ySpeed==0){
+    draw();
+  }
+
   
   xMinTime = xMinTime + 1;
   xMaxTime = xMaxTime + 1;
