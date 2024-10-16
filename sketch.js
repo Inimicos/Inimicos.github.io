@@ -44,9 +44,11 @@ function draw() {
   fill(0,0,100);
   circle(x,y,radius);
 
+  if(ySpeed>-0.01 && ySpeed<0.01 && y > height-radius/2-1){
     if(pressedKeys.r){
     setup();
   } 
+  }
   
   
   xMinTime = xMinTime + 1;
