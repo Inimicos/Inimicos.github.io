@@ -62,13 +62,13 @@ function draw() {
   
   speed=sqrt(ySpeed*ySpeed+xSpeed*xSpeed);
   
-if(speed >= 0.01){
+if(speed >= 0.3){
   speed=speed*0.998;
    }
-  /*else{
+  if(speed <= 0.3 && y>=height-radius/2-1){
     speed=0;
     setup();
-  } */
+  } 
   
   if(xSpeed<0){
      xSpeed=-1*(sqrt((speed*speed)/anteilX));
@@ -85,7 +85,7 @@ if(speed >= 0.01){
   else {
     ySpeed=sqrt((speed*speed)/anteilY);
        }
-  console.log(ySpeed)
+
   
 
   
@@ -136,10 +136,10 @@ if(y<=radius/2 && xMinTime > 2){
    } 
 }
 
-/* function keyPressed() {
+function keyPressed() {
   pressedKeys[key] = true;
 }
 
 function keyReleased(){
   delete pressedKeys[key];
-} */
+} 
