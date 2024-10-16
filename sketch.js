@@ -23,8 +23,8 @@ function setup() {
   createCanvas(600,600 );
   frameRate(300);
   
-xSpeed= floor(random(2,22));
-ySpeed= floor(random(0,32));
+xSpeed= floor(random(2,7));
+ySpeed= floor(random(0,5));
 
 radius = 50;
 x=radius/2+1;
@@ -111,27 +111,35 @@ if(speed >= 0.3){
   
   
   
-  if(x>=width-radius/2 && xMaxTime > 2){
+  if(x>width-radius/2 && xMaxTime > 4){
     xSpeed=xSpeed*-1;  
+ 
+    x = width - radius/2
     
     xMaxTime=0;
    }
   
-  if(x<=radius/2 && xMinTime > 2){
+  if(x<radius/2 && xMinTime > 4){
     xSpeed=xSpeed*-1
+
+    x = radius/2
     
     xMinTime=0;
    }
   
-  if(y>=height-radius/2 && xMaxTime > 4){
+  if(y>height-radius/2 && xMaxTime > 4){
     ySpeed=ySpeed*-1
+
+    y = height - radius/2
     
     yMaxTime=0;
    }
   
-if(y<=radius/2 && xMinTime > 2){
+if(y<radius/2 && xMinTime > 4){
     ySpeed=ySpeed*-1
-  
+
+    y = radius/2
+    
     yMinTime=0;
    } 
 }
