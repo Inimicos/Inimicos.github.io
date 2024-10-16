@@ -49,7 +49,7 @@ function draw() {
   speed=sqrt(ySpeed*ySpeed+xSpeed*xSpeed);
   
 if(speed!=0){
-  speed=speed-0.01;
+  speed=speed-0.02;
    }
   if(xSpeed<0){
      xSpeed=-1*(sqrt((speed*speed)/anteilX));
